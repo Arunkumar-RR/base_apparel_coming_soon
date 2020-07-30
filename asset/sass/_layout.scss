@@ -1,0 +1,247 @@
+.wrapper
+{
+   @include flex(column,center,center);
+    .logo
+    {
+        align-self:flex-start;
+        width: fit-content;
+        position: relative;
+        top: 50px;
+        left: 11.5%;
+    }
+    .hero-container
+    {
+        
+        @include flex(row,center,center);
+        .content-container
+        {
+            margin: 0 0 0 50px;
+            width: 45%;
+            @include flex(column,flex-start,center);
+            .heading-1
+            {
+                font-size: $font-size-1;
+                text-transform: uppercase;
+                font-weight: map-get($map: $font-weight, $key: light );
+                color: $color-1;
+                letter-spacing: .2em;
+                margin: 0;
+            }
+            .heading-2
+            {
+                text-transform: uppercase;
+                font-size: $font-size-1;
+                font-weight: map-get($map: $font-weight, $key: semi-bold );
+                color: $color-3;
+                letter-spacing: .3em;
+                margin: 0;
+            }
+            .content
+            {
+                width: 83%; 
+                line-height: 1.5em;
+                color: $color-1;
+                font-size: $font-size-5;
+                font-weight: map-get($map: $font-weight, $key: regular );
+            }
+            form
+            {
+                position: relative;
+                margin-top: 10px;
+                left: -10px;
+                @include flex(row,center,center);
+                #email
+                {
+                    padding: 15px;
+                    height: 8px;
+                    border: 1px solid $color-1;
+                    border-radius: $border-radius-2;
+                    width: 70%;
+                }
+                ::placeholder
+                {
+                    font-family: $font-family;
+                    color: $color-1;
+                    opacity: .6;
+                    font-size: $font-size-4;
+                }
+                svg
+                {
+                    display: inline-block;
+                    visibility:hidden;
+                    position: relative;
+                    left: -80px;
+                }
+                button
+                {
+                   display: block;
+                   position: relative;
+                    left: -70px;
+                    height: 43px;
+                    width: 75px ;
+                    border-radius: $border-radius-2;
+                    border: none;
+                    box-shadow: $box-shadow-1;
+                    background-image: $linear-gradient;
+                    .arrow {
+                        border: solid $color-neutral-1;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        padding: 5px;
+                      }
+                      
+                      .right {
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                      }
+                      &:hover
+                      {
+                        box-shadow: $box-shadow-2;
+                      }
+                }
+                #validation-message
+                {
+                    font-size: $font-size-5;
+                    position: relative;
+                    left: -130px;
+                    margin: 10px;
+                    visibility: hidden;
+                }
+            }
+        }
+        .image-container
+        {
+            overflow: hidden;
+            position: relative;
+            top: -38px;
+            left: 9.12%;
+            width: 50%;
+            height: 650px;
+            margin: 0;
+            background-image: url(../images/hero-desktop.jpg);
+            background-repeat: no-repeat;
+        }
+
+    }
+   
+}
+
+@include smartphone
+{
+    .wrapper
+    {
+        width: fit-content;
+        margin: 0;
+        .logo
+        {
+            align-self:flex-start;
+            position:initial;
+            margin: 40px 0 40px 30px;
+        }
+        .hero-container
+        {
+            @include flex(column-reverse,center,center);
+            .content-container
+            {
+                text-align: center;
+                margin: 0 0 0 0;
+                width: 100%;
+                @include flex(column,center,center);
+                .heading-1
+                {
+                    font-size: $font-size-1;
+                }
+                .heading-2
+                {
+                    font-size: $font-size-1;
+                    margin: 0 20px;
+                }
+                .content
+                {
+                    width: 300px; 
+                    line-height: 1.5em;
+                    color: $color-1;
+                    font-size: $font-size-5;
+                    font-weight: map-get($map: $font-weight, $key: regular );
+                }
+                form
+                {
+                    position: relative;
+                    left: 5%;
+                    margin-top: 10px;
+                    @include flex(row,center,center);
+                    #email
+                    {
+                        padding: 15px;
+                        height: 8px;
+                        border: 1px solid $color-1;
+                        border-radius: $border-radius-2;
+                        width: 50%;
+                    }
+                    ::placeholder
+                    {
+                        font-family: $font-family;
+                        color: $color-1;
+                        opacity: .6;
+                        font-size: $font-size-4;
+                    }
+                    svg
+                    {
+                        display: inline-block;
+                        visibility: hidden;
+                        position: relative;
+                        left: -80px;
+                    }
+                    button
+                    {
+                    display: block;
+                    position: relative;
+                        left: -70px;
+                        height: 43px;
+                        width: 75px ;
+                        border-radius: $border-radius-2;
+                        border: none;
+                        box-shadow: $box-shadow-1;
+                        background-image: $linear-gradient;
+                        .arrow {
+                            border: solid $color-neutral-1;
+                            border-width: 0 2px 2px 0;
+                            display: inline-block;
+                            padding: 5px;
+                        }
+                        
+                        .right {
+                            transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                        }
+                        &:hover
+                        {
+                            box-shadow: $box-shadow-2;
+                        }
+                    }
+                    #validation-message
+                    {
+                        font-size: $font-size-5;
+                        position: relative;
+                        left: -130px;
+                        margin: 10px;
+                        visibility: hidden;
+                    }
+                }
+            }
+            .image-container
+            {
+                position: initial;
+                top: 0;
+                left: 0;
+                width: 100% ;
+                height:400px ;
+                background-image: url(../images/hero-mobile.jpg);
+                background-size: 100% 100%;
+                margin: 0 0 100px 0;
+            }
+
+        }
+    
+    }
+}

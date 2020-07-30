@@ -1,0 +1,442 @@
+.attribution {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution h6 {
+  margin: 10px 15px;
+  font-size: 0.8em;
+  color: black;
+  font-weight: 400;
+}
+
+.attribution h6 a {
+  font-weight: 600;
+  color: #f96262;
+}
+
+@media screen and (max-width: 1100px) {
+  .attribution {
+    text-align: center;
+    padding: 0;
+    margin: auto 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .attribution h6 {
+    margin: 10px 0px;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .attribution h6 a {
+    font-weight: 600;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  top: 50px;
+  left: 11.5%;
+}
+
+.wrapper .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .hero-container .content-container {
+  margin: 0 0 0 50px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.wrapper .hero-container .content-container .heading-1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #ce9797;
+  letter-spacing: .2em;
+  margin: 0;
+}
+
+.wrapper .hero-container .content-container .heading-2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 600;
+  color: #413a3a;
+  letter-spacing: .3em;
+  margin: 0;
+}
+
+.wrapper .hero-container .content-container .content {
+  width: 83%;
+  line-height: 1.5em;
+  color: #ce9797;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.wrapper .hero-container .content-container form {
+  position: relative;
+  margin-top: 10px;
+  left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .hero-container .content-container form #email {
+  padding: 15px;
+  height: 8px;
+  border: 1px solid #ce9797;
+  border-radius: 30px;
+  width: 70%;
+}
+
+.wrapper .hero-container .content-container form ::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  opacity: .6;
+  font-size: 1em;
+}
+
+.wrapper .hero-container .content-container form :-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  opacity: .6;
+  font-size: 1em;
+}
+
+.wrapper .hero-container .content-container form ::-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  opacity: .6;
+  font-size: 1em;
+}
+
+.wrapper .hero-container .content-container form ::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  opacity: .6;
+  font-size: 1em;
+}
+
+.wrapper .hero-container .content-container form svg {
+  display: inline-block;
+  visibility: hidden;
+  position: relative;
+  left: -80px;
+}
+
+.wrapper .hero-container .content-container form button {
+  display: block;
+  position: relative;
+  left: -70px;
+  height: 43px;
+  width: 75px;
+  border-radius: 30px;
+  border: none;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 100px 80px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 100px 80px rgba(0, 0, 0, 0.09);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+.wrapper .hero-container .content-container form button .arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.wrapper .hero-container .content-container form button .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.wrapper .hero-container .content-container form button:hover {
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.14), 0 100px 180px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.14), 0 100px 180px rgba(0, 0, 0, 0.19);
+}
+
+.wrapper .hero-container .content-container form #validation-message {
+  font-size: 0.8em;
+  position: relative;
+  left: -130px;
+  margin: 10px;
+  visibility: hidden;
+}
+
+.wrapper .hero-container .image-container {
+  overflow: hidden;
+  position: relative;
+  top: -38px;
+  left: 9.12%;
+  width: 50%;
+  height: 650px;
+  margin: 0;
+  background-image: url(../images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+  .wrapper .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    position: initial;
+    margin: 40px 0 40px 30px;
+  }
+  .wrapper .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .hero-container .content-container {
+    text-align: center;
+    margin: 0 0 0 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .hero-container .content-container .heading-1 {
+    font-size: 3em;
+  }
+  .wrapper .hero-container .content-container .heading-2 {
+    font-size: 3em;
+    margin: 0 20px;
+  }
+  .wrapper .hero-container .content-container .content {
+    width: 300px;
+    line-height: 1.5em;
+    color: #ce9797;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .wrapper .hero-container .content-container form {
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .hero-container .content-container form #email {
+    padding: 15px;
+    height: 8px;
+    border: 1px solid #ce9797;
+    border-radius: 30px;
+    width: 50%;
+  }
+  .wrapper .hero-container .content-container form ::-webkit-input-placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    color: #ce9797;
+    opacity: .6;
+    font-size: 1em;
+  }
+  .wrapper .hero-container .content-container form :-ms-input-placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    color: #ce9797;
+    opacity: .6;
+    font-size: 1em;
+  }
+  .wrapper .hero-container .content-container form ::-ms-input-placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    color: #ce9797;
+    opacity: .6;
+    font-size: 1em;
+  }
+  .wrapper .hero-container .content-container form ::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    color: #ce9797;
+    opacity: .6;
+    font-size: 1em;
+  }
+  .wrapper .hero-container .content-container form svg {
+    display: inline-block;
+    visibility: hidden;
+    position: relative;
+    left: -80px;
+  }
+  .wrapper .hero-container .content-container form button {
+    display: block;
+    position: relative;
+    left: -70px;
+    height: 43px;
+    width: 75px;
+    border-radius: 30px;
+    border: none;
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 100px 80px rgba(0, 0, 0, 0.09);
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 100px 80px rgba(0, 0, 0, 0.09);
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  }
+  .wrapper .hero-container .content-container form button .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .wrapper .hero-container .content-container form button .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .wrapper .hero-container .content-container form button:hover {
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.14), 0 100px 180px rgba(0, 0, 0, 0.19);
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.14), 0 100px 180px rgba(0, 0, 0, 0.19);
+  }
+  .wrapper .hero-container .content-container form #validation-message {
+    font-size: 0.8em;
+    position: relative;
+    left: -130px;
+    margin: 10px;
+    visibility: hidden;
+  }
+  .wrapper .hero-container .image-container {
+    position: initial;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: 100% 100%;
+    margin: 0 0 100px 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-position-y: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
